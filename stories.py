@@ -3,33 +3,39 @@ from top_page_clean_strat import *
 
 class Story(object):
 
-    def __init__(self,
-                title = '',
-                image=None,
-                description = '',
-                author = '',
-                publishedDate = '',
-                slug = ''):
+    # def __init__(self,
+    #             title_link,
+    #             title,
+    #             user_karma_points,
+    #             points,
+    #             main_site,
+    #             item_id,
+    #             user_link,
+    #             comments_count,
+    #             username):
 
-        self.title = title
-        self.image = image
-        self.description = description
-        self.author = author
-        self.publishedDate = publishedDate
-        self.slug = slug
+        # self.title_link = title_link
+        # self.title = title
+        # self.user_karma_points = user_karma_points
+        # self.points = points
+        # self.main_site = main_site
+        # self.item_id = item_id
+        # self.user_link = user_link
+        # self.comments_count = comments_count
+        # self.username = username
 
     def __repr__(self):
-        print ('test')
         return json.dumps(self.to_dict())
 
-    def to_dict(self):
+    def story_to_dict(self):
         return {
-            'title': self.title,
-            'image': self.image,
-            'short_description' : self.description,
-            'author' :self.author,
-            'publishedDdate' :self.publishedDate
+            "title_link": self.title_link,
+            "title": self.title,
+            "user_karma_points": self.user_karma_points,
+            "points": self.points,
+            "main_site": self.main_site,
+            "item_id": self.item_id,
+            "user_link": self.user_link,
+            "comments_count": self.comments_count,
+            "username": self.username
         }
-
-    def image(self, arg):
-        pass
