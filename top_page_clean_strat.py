@@ -63,7 +63,7 @@ class StoryCleanStrat(object):
         title_tag = col.find('a', attrs={'class': 'storylink'})
         if 'title' in td_title_class and title_tag is not None:
             data['title'] = title_tag.text
-            data['title'] = title_tag['href']
+            data['title_link'] = title_tag['href']
 
             main_site_tag = col.find('span', attrs={'class': 'sitestr'})
             data['main_site'] = 'NA'
