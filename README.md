@@ -14,4 +14,10 @@
 
 `./hn_parser.sh`
 
-Generates a csv file as hn_top_page_{current_data_time}.csv with all the relevant information.
+
+Parses the top page of Hacker News.
+    Creates two csv files
+    1) Stories sorted by comments.
+       - filename: sorted_by_comments_{current_datetime}.csv
+    2) List of all the stories rank wise
+       - filename: hn_top_page_{current_datetime}.csv
