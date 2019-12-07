@@ -16,8 +16,10 @@
 
 
 Parses the top page of Hacker News.
-    Creates two csv files
-    1) Stories sorted by comments.
-       - filename: sorted_by_comments_{current_datetime}.csv
-    2) List of all the stories rank wise
-       - filename: hn_top_page_{current_datetime}.csv
+Creates two csv files
+
+1) Stories sorted by comments.
+   - filename: sorted_by_comments_{current_datetime}.csv
+
+2) List of all the stories rank wise
+   - filename: hn_top_page_{current_datetime}.csv
